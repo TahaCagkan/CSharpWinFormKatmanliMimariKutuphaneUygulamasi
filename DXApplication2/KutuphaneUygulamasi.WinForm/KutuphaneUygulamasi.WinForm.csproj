@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9F4A7DCF-E697-41EE-8CE8-4967D4424693}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KutuphaneUygulamasi.WinForm</RootNamespace>
+    <AssemblyName>KutuphaneUygulamasi.WinForm</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v20.2" />
+    <Reference Include="DevExpress.Data.v20.2" />
+    <Reference Include="DevExpress.Office.v20.2.Core" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Core" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Export" />
+    <Reference Include="DevExpress.Printing.v20.2.Core" />
+    <Reference Include="DevExpress.Data.Desktop.v20.2" />
+    <Reference Include="DevExpress.Utils.v20.2" />
+    <Reference Include="DevExpress.XtraBars.v20.2" />
+    <Reference Include="DevExpress.Sparkline.v20.2.Core" />
+    <Reference Include="DevExpress.XtraEditors.v20.2" />
+    <Reference Include="DevExpress.XtraGrid.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v20.2, Version=20.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaMenu\frmAnaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaMenu\frmAnaMenu.Designer.cs">
+      <DependentUpon>frmAnaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KitapHareketleri\FrmKitapAlisVeris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitapHareketleri\FrmKitapAlisVeris.Designer.cs">
+      <DependentUpon>FrmKitapAlisVeris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kitap\frmKitap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kitap\frmKitap.Designer.cs">
+      <DependentUpon>frmKitap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kitap\frmKitapIslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kitap\frmKitapIslem.Designer.cs">
+      <DependentUpon>frmKitapIslem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sinif\FrmSinif.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sinif\FrmSinif.Designer.cs">
+      <DependentUpon>FrmSinif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sinif\FrmSinifIslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sinif\FrmSinifIslem.Designer.cs">
+      <DependentUpon>FrmSinifIslem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tanim\FrmTanim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tanim\FrmTanim.Designer.cs">
+      <DependentUpon>FrmTanim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uye\FrmUye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uye\FrmUye.Designer.cs">
+      <DependentUpon>FrmUye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Uye\FrmUyeIslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Uye\FrmUyeIslem.Designer.cs">
+      <DependentUpon>FrmUyeIslem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Yazar\FrmYazarIslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yazar\FrmYazarIslem.Designer.cs">
+      <DependentUpon>FrmYazarIslem.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaMenu\frmAnaMenu.resx">
+      <DependentUpon>frmAnaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitapHareketleri\FrmKitapAlisVeris.resx">
+      <DependentUpon>FrmKitapAlisVeris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kitap\frmKitap.resx">
+      <DependentUpon>frmKitap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kitap\frmKitapIslem.resx">
+      <DependentUpon>frmKitapIslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Sinif\FrmSinif.resx">
+      <DependentUpon>FrmSinif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sinif\FrmSinifIslem.resx">
+      <DependentUpon>FrmSinifIslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tanim\FrmTanim.resx">
+      <DependentUpon>FrmTanim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uye\FrmUye.resx">
+      <DependentUpon>FrmUye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Uye\FrmUyeIslem.resx">
+      <DependentUpon>FrmUyeIslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yazar\FrmYazarIslem.resx">
+      <DependentUpon>FrmYazarIslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\KutuphaneUygulamasi.Business\KutuphaneUygulamasi.Business.csproj">
+      <Project>{69158a89-87af-481f-bf53-c29fa777c11d}</Project>
+      <Name>KutuphaneUygulamasi.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\KutuphaneUygulamasi.Entities\KutuphaneUygulamasi.Entities.csproj">
+      <Project>{4426fcdd-6afc-43b9-b92b-a15d70ad159c}</Project>
+      <Name>KutuphaneUygulamasi.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
